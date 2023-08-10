@@ -1,11 +1,10 @@
-
-main{
+main {
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     background-color: var(--bg-header-color);
@@ -14,48 +13,55 @@ header{
     flex-wrap: wrap;
 }
 
-.left{
+.left {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.left .logo{
+.left .logo {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
     color: var(--logo-color);
     cursor: pointer;
     font-weight: bold;
     font-size: 1.3rem;
 }
 
-.left .menu{
+.left .logo svg{
+    fill: var(--logo-color);
+}
+
+.left .menu {
     font-weight: 500;
     cursor: pointer;
     display: none;
 }
 
-header .right{
+header .right {
     align-items: center;
     display: flex;
 }
 
-.right nav .nav-links{
+.right nav .nav-links {
     display: flex;
     gap: 1rem;
 }
 
- .nav-links li{
+.nav-links li {
     list-style: none;
 }
 
- .nav-links li:hover{
+.nav-links li:hover {
     transform: translateY(-2px);
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     border-bottom: 2px solid var(--btn-color);
 }
 
-.nav-links li a{
+.nav-links li a {
     font-weight: 500;
     text-decoration: none;
     color: var(--main-color);
@@ -65,17 +71,17 @@ header .right{
     display: none;
 }
 
-#dark-theme-icon{
+#dark-theme-icon {
     fill: var(--svg-color);
     cursor: pointer;
     margin: 0 0.5rem;
 }
 
-.buttons{
+.buttons {
     display: flex;
 }
 
-.buttons a{
+.buttons a {
     outline: none;
     font-weight: var(--weight);
     text-decoration: none;
@@ -86,20 +92,20 @@ header .right{
     border-radius: 10px;
 }
 
-.buttons a:hover{
+.buttons a:hover {
     background-color: rgb(107 33 168);
 }
 
-.tutorial{
+.tutorial {
     fill: var(--btn-color);
     display: none;
 }
 
-hr{
-    border:1px solid var(--border);
+hr {
+    border: 1px solid var(--border);
 }
 
-.sub-header{
+.sub-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,42 +114,42 @@ hr{
     box-shadow: var(--shadow);
 }
 
-.sub-center .navlinks2{
+.sub-center .navlinks2 {
     display: flex;
     text-transform: uppercase;
 
     /* display: none; */
 }
 
-.navlinks{
+.navlinks {
     display: none;
 }
 
-.sub-center .navlinks2 li{
+.sub-center .navlinks2 li {
     list-style: none;
 }
 
-.sub-center .navlinks2 li a{
+.sub-center .navlinks2 li a {
     color: var(--logo-color);
-    margin:0 1rem;
+    margin: 0 1rem;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.sub-center .navlinks2 li:hover{
+.sub-center .navlinks2 li:hover {
     transform: translateY(-2px);
 }
 
-.sub-center .navlinks2 li a:hover{
+.sub-center .navlinks2 li a:hover {
     border-bottom: 2px solid var(--btn-color);
 }
 
-.sub-right{
+.sub-right {
     position: relative;
 }
 
-.search{
+.search {
     outline: none;
     padding: .4rem;
     font-size: 1rem;
@@ -155,21 +161,22 @@ hr{
     width: 14rem;
 }
 
-::placeholder{
+::placeholder {
     color: var(--main-color);
 }
 
-.search.hide{
+.search.hide {
     visibility: visible;
 }
 
-.search-icon{
+.search-icon {
     position: absolute;
     top: 9px;
     right: 6px;
 }
 
-.sub-right svg,.sub-left svg{
+.sub-right svg,
+.sub-left svg {
     fill: var(--logo-color);
     cursor: pointer;
 }
@@ -177,7 +184,7 @@ hr{
 /* Courses Section */
 
 
-.courses-section{
+.courses-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -185,7 +192,7 @@ hr{
     margin: 0 1rem;
 }
 
-.courses-section .course-box{
+.courses-section .course-box {
     width: 24rem;
     height: 32.5rem;
     background: var(--bg-header-color);
@@ -199,14 +206,14 @@ hr{
     border-radius: 1.5rem;
 }
 
-.course-box-top img{
+.course-box-top img {
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 2rem;
     cursor: pointer;
     width: 24rem;
 }
 
-.course-box-bottom{
+.course-box-bottom {
     padding: 1rem;
     position: relative;
     display: flex;
@@ -216,7 +223,7 @@ hr{
     height: 18rem;
 }
 
-.course-box-bottom span{
+.course-box-bottom span {
     text-transform: uppercase;
     font-weight: 500;
     color: var(--title-color);
@@ -224,19 +231,19 @@ hr{
     line-height: 1rem;
 }
 
-.course-box-bottom p{
+.course-box-bottom p {
     color: var(--title-color);
     padding: 1rem 5px;
 }
 
-.course-box-bottom div{
+.course-box-bottom div {
     font-weight: 500;
     color: var(--header);
     font-size: 1.125rem;
     line-height: 1.75rem;
 }
 
-.course-box-bottom button{
+.course-box-bottom button {
     padding: .7rem;
     cursor: pointer;
     border-radius: 1.2rem;
@@ -247,25 +254,25 @@ hr{
     outline: none;
 }
 
-.course-box-bottom button:hover{
+.course-box-bottom button:hover {
     background-color: rgb(107 33 168);
 }
 
-.btn{
+.btn {
     position: absolute;
     bottom: -3rem;
 }
 
 /* Footer Section */
 
-.footer-container{
+.footer-container {
     display: flex;
     padding: 1rem 1.5rem;
     align-items: center;
     background: var(--box-color);
 }
 
-.footer-container p{
+.footer-container p {
     padding-left: 1rem;
     margin-left: 1rem;
     padding: .5rem 1rem;
@@ -273,12 +280,12 @@ hr{
     border-left: 2px solid var(--border);
 }
 
-.footer-left{
+.footer-left {
     display: flex;
     align-items: center;
 }
 
-.footer-left span{
+.footer-left span {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -286,19 +293,19 @@ hr{
     margin-left: 1rem;
 }
 
-.footer-right{
+.footer-right {
     display: flex;
     justify-content: flex-end;
     flex: auto;
 
 }
 
-.footer-right a{
+.footer-right a {
     margin: .5rem;
     font-size: 1.25rem;
     text-decoration: none;
 }
 
-.footer-right a svg{
+.footer-right a svg {
     fill: var(--test-info);
 }
