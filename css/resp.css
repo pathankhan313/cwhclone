@@ -1,0 +1,283 @@
+@media screen and (max-width:1000px) {
+    header .right nav .nav-links {
+        display: none;
+    }
+
+    .right nav .nav-links.active {
+        display: flex;
+        position: absolute;
+        left: 0rem;
+        width: 100%;
+        background: var(--nav-resp-bg);
+        top: 8.1rem;
+        align-items: center;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    header .left .menu {
+        display: flex;
+        color: var(--btn-color);
+        align-items: center;
+        gap: .2rem;
+    }
+
+
+     .menu .menu-icon {
+        fill: var(--btn-color);
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .navlinks.active {
+        text-transform: uppercase;
+        color: var(--btn-color);
+        background: var(--list-resp-bg);
+        width: 100%;
+        padding: .2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .navlinks li {
+        border-top: 2px solid var(--primary-color);
+    } */
+
+    .right nav .nav-links li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+    }
+
+    .right nav .nav-links li a {
+        color: rgb(168 85 247);
+    }
+
+    .tutorial svg {
+        cursor: pointer;
+    }
+
+    .sub-header .sub-center .navlinks2 {
+        display: none;
+    }
+
+    .sub-header .sub-center .navlinks2 li:hover,
+    .right nav .nav-links li:hover {
+        transform: translateY(0px);
+    }
+
+    .sub-center .navlinks2 li a:hover,
+    .right nav .nav-links li a:hover {
+        border-bottom: none;
+    }
+
+    .home-right {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .tutorial {
+        display: block;
+    }
+
+    .home-left {
+        align-items: center;
+    }
+
+    #home {
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .signup-left {
+        display: none;
+    }
+
+    .signup-right {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .testimonal-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonal {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container p {
+        border: none;
+        text-align: center;
+    }
+
+    .home-left p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .home-left h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .home-left h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .courses-section {
+        gap: 1rem;
+    }
+
+    .buttons a:last-child {
+        display: none;
+    }
+
+    .courses-section .course-box,
+    .course-box-top img {
+        width: 21rem;
+    }
+
+    .courses-section .course-box {
+        height: 31.5rem;
+    }
+
+    .social-icons div a {
+        font-size: 1.8rem;
+    }
+
+    .contact-top h2 {
+        font-size: 1.7rem;
+    }
+
+    .contact-top img {
+        width: 8rem;
+    }
+
+    .signup {
+        align-items: center;
+    }
+
+    .signup-right {
+        width: 22rem;
+    }
+
+    .check-box label {
+        font-size: .8rem;
+    }
+
+    .sign_up-email::before {
+        left: -5rem;
+        width: 4rem;
+    }
+
+    .sign_up-email::after {
+        right: -5rem;
+        width: 4rem;
+    }
+
+    .record-boxes {
+        width: 100%;
+    }
+
+    .record-heading h2 {
+        font-size: 1.75rem;
+        line-height: 1.25rem;
+    }
+
+    .blog-main .blog-boxes{
+        width: 95%;
+        margin: 1.5rem 1rem;
+    }
+
+    .blog-main .blog-heading h2 {
+        font-size: 1.575rem;
+        line-height: 1.85rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:430px) {
+
+    .courses-section .course-box,
+    .course-box-top img {
+        width: 16rem;
+    }
+
+    .heading,
+    .header {
+        font-size: 1.575rem;
+        line-height: 2rem;
+    }
+
+    .tutorials-section .tut-box,
+    .notes-section .notes-box {
+        width: 18rem;
+    }
+
+    .gear-heading h1 {
+        font-size: 2rem;
+    }
+
+    .gear-heading h1 span {
+        font-size: 2.2rem;
+    }
+
+}
+
+@media screen and (min-width:1600px) {
+
+    .courses-section,
+    .testimonal-main,
+    #home {
+        max-width: 1600px;
+        margin: auto;
+    }
+
+    .tutorials-section,
+    .notes-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .testimonal-main {
+        margin: 4rem auto;
+    }
+
+    .notes-section .notes-box {
+        width: 22rem;
+        margin: 3rem 0;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+
+    .footer-container {
+        justify-content: center;
+    }
+
+    .footer-right {
+        flex: none;
+    }
+
+    .record-boxes-main {
+        margin: auto;
+        max-width: 1600px;
+    }
+}
