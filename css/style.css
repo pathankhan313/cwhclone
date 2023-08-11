@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -864,16 +866,16 @@ body {
     /* height: 100vh; */
 }
 
-.work-left{
+#work-main .work-left{
     width: 60%;
     display: flex;
     flex-direction: column;
     gap: .5rem;
     margin-right: 3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 #work-main .work-left h1{
-    font-weight: 500;
     font-size: 1.875rem;
     line-height: 2.25rem;
     color: var(--header);
@@ -887,7 +889,7 @@ body {
 }
 
 #work-main .work-right{
-    /* width: 50%; */
+    width: 35%;
     background-color: var(--contact-box-color);
     border-radius: 5px;
     padding: 1rem;
@@ -931,7 +933,7 @@ body {
 
 #work-form .work-details input{
     font-size: 1.2rem;
-    width: 20rem;
+    /* width: 20rem; */
     padding: .5rem;
     border: 1px solid gray;
     border-radius: .2rem;
