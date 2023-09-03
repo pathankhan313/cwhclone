@@ -225,20 +225,24 @@
         width: 4rem;
     }
 
-    .record-boxes {
-        width: 100%;
+    .record-boxes-main .record-boxes {
+        width: 24rem;
     }
 
-    .record-heading h2 {
+    .record-boxes-main .record-boxes-bottom{
+        height: 19rem;
+    }
+    
+    .record-main-box .record-heading h2 {
         font-size: 1.75rem;
         line-height: 1.25rem;
     }
-
+    
     .blog-main .blog-boxes{
         width: 95%;
         margin: 1.5rem 1rem;
     }
-
+    
     .blog-main .blog-heading h2 {
         font-size: 1.575rem;
         line-height: 1.85rem;
@@ -246,11 +250,22 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .record-boxes-main .record-boxes {
+        width: 20rem;
+    }
+    
+    .record-boxes-main .record-boxes-bottom{
+        height: 21rem;
+    }
+  
+}
+
 @media screen and (max-width:430px) {
 
     .courses-section .course-box,
     .course-box-top img {
-        width: 16rem;
+        width: 20rem;
     }
 
     .heading,
@@ -276,6 +291,13 @@
         padding: 5rem 1rem;
     }
 
+}
+
+@media screen and (max-width: 350px) {
+    .courses-section .course-box,
+    .course-box-top img {
+        width: 17rem;
+    }
 }
 
 @media screen and (min-width:1600px) {
