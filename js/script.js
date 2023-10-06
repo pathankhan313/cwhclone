@@ -52,7 +52,5 @@ icon.addEventListener('click',()=>{
       }
     }
 
-    
-
     // Call the setDarkModePreference function on page load
     setDarkModePreference();

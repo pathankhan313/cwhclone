@@ -7,18 +7,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ::-webkit-scrollbar{
-    width: 1rem;
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: #7e22ce;
-}
-
-::-webkit-scrollbar-track{
-    background-color: #111827;
-} */
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -114,31 +102,6 @@ body {
     flex-direction: column;
     position: relative;
 }
-
-/* #element{
-    overflow: hidden;
-}
-
-#element::before{
-    content: '';
-    position: absolute;
-    height: 1.4rem;
-    width: 2rem;
-    border-left: 2px solid ;
-    background-color: #7e22ce ;
-    left: 6.7rem;
-    top: 3.4rem;
-    animation: text-animate 4s steps(12) infinite;
-} */
-
-/* @keyframes text-animate {
-    40%,60%{
-        left: 100%;
-    }
-    100%{
-        left: 0;
-    }
-} */
 
 .home-left h1 {
     font-size: 2.4rem;
@@ -513,8 +476,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    /* padding: 3rem; */
     background: var(--bg-header-color);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -797,10 +758,7 @@ body {
 .record-boxes{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* border: 2px solid; */
     width: 30rem;
-    /* margin: 2rem .8rem; */
 }
 
 .record-boxes-top {
