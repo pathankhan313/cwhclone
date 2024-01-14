@@ -1,16 +1,11 @@
 let icon = document.getElementById('dark-theme-icon')
 let search_icon = document.querySelector('.search-icon')
-
 let search = document.querySelector('.search')
-
-
 const menu = document.querySelector('.menu')
 const tut = document.querySelector('.tutorial')
-
 const menu_item = document.querySelector('.nav-links')
 const sub_menu_item = document.querySelector('.navlinks')
-
-let logo = document.querySelector('.logo');
+const logo = document.querySelector('.logo');
 
 logo.addEventListener('click',()=>{
     window.open('index.html','_self')
@@ -23,7 +18,7 @@ const gotoblog = () =>{
 const gotocourses = () =>{
     window.open('courses.html','_self')
 }
-
+// Search icon toggle
 search_icon.addEventListener('click',()=>{
     search.classList.toggle('hide')
 })
